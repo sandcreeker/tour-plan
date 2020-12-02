@@ -1,7 +1,7 @@
 .footer
   background-color: $dark
   color: $light
-  padding: 108px 46px
+  padding: 108px 25px
   &-container
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -15,6 +15,8 @@
     grid-row: 1 / 4
   &__social
     &-network
+      flex-wrap: wrap
+      flex-basis: 100%
       grid-row: 2 / 4
   &__contact
     &-detail
@@ -48,7 +50,7 @@
     align-items: flex-start
     font-weight: normal
     font-size: 14px
-    line-height: 160%
+    line-height: 100%
     color: $footer-text-color
     &--li
       margin-bottom: 20px
@@ -67,6 +69,7 @@
   &__area
     border-radius: 4px
     padding: 18px 23px
+    height: 123px
     flex-basis: 100%
     resize: none
     border: none
@@ -81,6 +84,9 @@
     &-link
       margin-left: 12px
       text-decoration: none
+  &__icon
+    &-wrapper
+      min-width: 40px
   &__input
     background-color: #fff
     border-radius: 4px
@@ -107,3 +113,19 @@
     font-size: 12px
     line-height: 15px
     color: $bottom-text-color
+  &__form
+    flex-wrap: wrap
+  &-bottom
+    display: flex
+    padding-top: 95px
+    flex-direction: row-reverse
+    &__link
+      color: $light
+      text-decoration: none
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-right: 13px
+    &__info
+      order: 1
+      flex-basis: 50%

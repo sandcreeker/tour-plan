@@ -12,6 +12,9 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width:992px)
   .container, .newsletter-container
     max-width: 700px
@@ -59,6 +62,39 @@
   .card
     width: 340px
     height: 255px
+  .footer
+    &-container
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__logo
+      width: 104px
+      height: 120px
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__contact
+      &-detail
+        grid-column: span 4
+    &__feedback
+      grid-column: 1 / 2
+      grid-column: span 5
+    &-bottom
+      padding-top: 56px
+      &__info
+        flex-basis: 100%
+    &__input
+      flex-basis: 48%
 @media ( max-width:768px)
   .container
     max-width: 576px
@@ -153,6 +189,9 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (min-width: 576px ) and (max-width: 630px )
   .newsletter
     padding-left: 20px
@@ -167,6 +206,66 @@
     padding-left: 20px
   .card
     width: 100%
+  .footer
+    padding-top: 69px
+    padding-left: 17px
+    padding-right: 17px
+    &-container
+      grid-template-columns: minmax(250px, 459px)
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        flex-wrap: wrap
+        grid-row: 2
+        grid-column: 1
+      &-link
+        margin-left: 0
+        margin-right: 12px
+    &__title
+      flex-basis: 100%
+    &__link
+      margin-bottom: 11px
+    &__icon
+      &-wrapper
+        min-width: 30px
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__ul
+      align-items: flex-start
+    &__contact
+      &-detail
+        grid-row: 6
+        grid-column: 1
+    &__feedback
+      grid-row: 7
+      grid-column: 1
+      flex-wrap: wrap
+    &__button
+      order: 1
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+    &-bottom
+      flex-direction: column
+      padding-top: 30px
+      flex-wrap: wrap
+      &__link
+        margin-right: 10px
+      &__info
+        order: 0
+        flex-basis: 100%
+        margin-bottom: 10px
+      &__image
+        width: fit-content
 @media ( max-width: 390px)
   .subscribe
     width: 280px
