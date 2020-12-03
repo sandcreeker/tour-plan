@@ -14,19 +14,19 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -43,6 +43,20 @@
     <nav class="navbar-buttom">
       <div class="container">
         <ul class="navigation">
+          <li class="navigation__item--mobile">
+            <a href="#" class="user navbar__user navigation__item--mobile--on">
+              <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar user__avatar--mobile">
+              <span class="user__name user__name--mobile">Nathan</span>
+            </a>
+          </li>
+          <li class="navigation__item--mob">
+            <form action="#" class="search navbar__search navigation__item--mob--on">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="icon: search">
+              </button>
+            </form>
+          </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">All Deals</a>
           </li>

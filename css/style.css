@@ -434,6 +434,14 @@ template {
   width: 100%;
 }
 
+.navigation__item--mobile {
+  display: none;
+}
+
+.navigation__item--mob {
+  display: none;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1756,12 +1764,69 @@ template {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 78px;
+  }
   .container {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar__user {
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--toggle, .navbar__user--mobile--toggle {
+    display: none;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  .navbar-buttom {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 78px;
+  }
+  .navbar-buttom--active {
+    display: block;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navigation__item {
+    margin-bottom: 20px;
+  }
+  .navigation__item--mobile--on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__item--mob {
+    margin-bottom: 39px;
+    width: 245px;
+  }
+  .navigation__item--mob--on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .menu-button {
     outline: none;
@@ -1790,8 +1855,13 @@ template {
     height: 1px;
     background-color: #333333;
   }
-  .navigation {
-    display: none;
+  .user__name--mobile {
+    color: #ffffff;
+    margin-left: 0;
+    margin-bottom: 27px;
+  }
+  .user__avatar--mobile {
+    margin-bottom: 10px;
   }
   .stars {
     -ms-flex-preferred-size: auto;

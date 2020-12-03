@@ -156,12 +156,50 @@
         color: $light
         background-color: $primary
 @media ( max-width:768px)
+  body
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
   .navbar
     &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--toggle
+          display: none
+    &__mobile
+      &--fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        width: 100%
+        z-index: 99
+    &-buttom
       display: none
+      position: fixed
+      bottom: 0
+      left: 0
+      right: 0
+      top: 78px
+      &--active
+        display: block
+    &__user
+      flex-direction: column
+      justify-content: center
+  .navigation
+    flex-direction: column
+    &__item
+      margin-bottom: 20px
+      &--mobile
+        &--on
+          display: flex
+      &--mob
+        margin-bottom: 39px
+        width: 245px
+        &--on
+          display: flex
   .menu
     &-button
       outline: none
@@ -179,8 +217,15 @@
         width: 16px
         height: 1px
         background-color: $text-color
-  .navigation
-    display: none
+  .user
+    &__name
+      &--mobile
+        color: $light
+        margin-left: 0
+        margin-bottom: 27px
+    &__avatar
+      &--mobile
+        margin-bottom: 10px
   .stars
     flex-basis: auto
   .hotel

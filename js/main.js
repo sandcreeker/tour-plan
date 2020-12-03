@@ -1,3 +1,11 @@
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function() {
+  console.log("Клик");
+  document.querySelector(".navbar-buttom").classList.toggle("navbar-buttom--active");
+  document.querySelector(".navigation__item--mobile").classList.toggle("navigation__item--mobile--on");
+  document.querySelector(".navigation__item--mob").classList.toggle("navigation__item--mob--on");
+});
+
 var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
