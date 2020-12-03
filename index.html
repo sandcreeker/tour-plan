@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="navbar">
@@ -286,7 +288,9 @@
   <section class="footer">
     <div class="container">
       <div class="footer-container">
-        <img src="img/vertical-besttourplan.svg" alt="image: logo best tour plan" class="footer__logo">
+        <a href="https://kroken.ru/homeworks/tour-plan.1/" class="footer__btp">
+          <img src="img/vertical-besttourplan.svg" alt="image: logo best tour plan" class="footer__logo">
+        </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -345,13 +349,13 @@
           <h3 class="footer__title">Social Network</h3>
           <div class="footer__social-links">
             <a href="#" class="footer__social-link">
-              <img src="img/fb.svg" alt="icon: facebook">
+              <img src="img/fb.svg" alt="icon: facebook" class="footer__social-icon">
             </a>
             <a href="#" class="footer__social-link">
-              <img src="img/yt.svg" alt="icon: youtube">
+              <img src="img/yt.svg" alt="icon: youtube" class="footer__social-icon">
             </a>
             <a href="#" class="footer__social-link">
-              <img src="img/inst.svg" alt="icon: instagram">
+              <img src="img/inst.svg" alt="icon: instagram" class="footer__social-icon">
             </a>
           </div>
           <!-- /.footer__social-links -->
@@ -383,21 +387,24 @@
                 <div class="footer__icon-wrapper">
                   <img src="img/location.svg" alt="icon: location" class="footer__icon">
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                <a href="#" class="footer__location">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</a> 
               </li>
               <li class="footer__item footer__item--li">
                 <div class="footer__icon-wrapper">
                   <img src="img/contact-detail-phone.svg" alt="icon: cellphone" class="footer__icon">
                 </div>
-                Tel (business hours) : 269 1500<br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__cellphone">
+                  Tel (business hours) : <a href="tel:2691500" class="footer__phone">269 1500</a> <br>
+                  Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__phone">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
+                  Tel (hotline) Sunday: <a href="tel:52566138" class="footer__phone">52-56-61-38</a> (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--li">
                 <div class="footer__icon-wrapper">
                   <img src="img/e-mail.svg" alt="icon: email" class="footer__icon">
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__email">cherly.lawson@example.com
+                </a>
               </li>
             </ul>
         </div>

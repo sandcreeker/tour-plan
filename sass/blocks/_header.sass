@@ -29,6 +29,16 @@
     text-transform: uppercase
     font-size: 14px
     line-height: 18px
+    &::after
+      content: ''
+      display: block
+      width: 0%
+      background-color: $bottom-text-color
+      height: 1px
+      transition: 0.6s
+    &:hover
+      &::after
+        width: 100%
 .search
   display: flex
   position: relative
@@ -55,6 +65,12 @@
     width: 65px
     border: none
     background-color: $primary
+    cursor: pointer
+    transition: all 150ms linear
+    &:hover
+      background-color: #960a23
+      color: $bottom-text-color
+      transition: all 250ms linear
 .user
   display: flex
   align-items: center
@@ -69,3 +85,13 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+    &::after
+      content: ''
+      display: block
+      width: 0%
+      background-color: $text-color
+      height: 1px
+      transition: 0.6s
+    &:hover
+      &::after
+        width: 100%

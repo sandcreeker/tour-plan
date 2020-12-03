@@ -420,6 +420,20 @@ template {
   line-height: 18px;
 }
 
+.navigation__link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  background-color: #E0E0E0;
+  height: 1px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.navigation__link:hover::after {
+  width: 100%;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,6 +466,16 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.search__button:hover {
+  background-color: #960a23;
+  color: #E0E0E0;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .user {
@@ -477,6 +501,20 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.user__name::after {
+  content: '';
+  display: block;
+  width: 0%;
+  background-color: #333333;
+  height: 1px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.user__name:hover::after {
+  width: 100%;
 }
 
 .breadcrumb-list {
@@ -778,6 +816,13 @@ template {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.booking__number:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .booking__num {
@@ -798,6 +843,15 @@ template {
   color: inherit;
   background-color: #EC1F46;
   cursor: pointer;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.booking__button:hover {
+  background-color: #960a23;
+  color: #E0E0E0;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .map {
@@ -894,6 +948,15 @@ template {
   outline: none;
   background-color: #EC1F46;
   color: #ffffff;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.subscribe__button:hover {
+  background-color: #960a23;
+  color: #E0E0E0;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .reviews {
@@ -1122,6 +1185,15 @@ template {
   padding: 7px 22px;
   background-color: #EC1F46;
   color: #ffffff;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.card__button:hover {
+  background-color: #960a23;
+  color: #E0E0E0;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .footer {
@@ -1141,11 +1213,14 @@ template {
   grid-auto-rows: minmax(40px, min-content);
 }
 
-.footer__logo {
-  width: 166px;
+.footer__btp {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
+}
+
+.footer__logo {
+  width: 166px;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
@@ -1191,6 +1266,32 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.footer__email {
+  text-decoration: none;
+  color: #BDBDBD;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__email:hover {
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__phone {
+  text-decoration: none;
+  color: #BDBDBD;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__phone:hover {
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer__title {
@@ -1242,6 +1343,21 @@ template {
 .footer__link {
   text-decoration: none;
   color: #BDBDBD;
+  margin-bottom: 10px;
+}
+
+.footer__link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  background-color: #E0E0E0;
+  height: 1px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.footer__link:hover::after {
+  width: 100%;
 }
 
 .footer__text {
@@ -1282,6 +1398,16 @@ template {
   text-decoration: none;
 }
 
+.footer__social-icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__social-icon:hover {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
 .footer__icon-wrapper {
   min-width: 40px;
 }
@@ -1295,6 +1421,7 @@ template {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   margin-bottom: 15px;
+  outline: none;
 }
 
 .footer__button {
@@ -1310,6 +1437,15 @@ template {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.footer__button:hover {
+  background-color: #960a23;
+  color: #E0E0E0;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .footer__info {
@@ -1342,6 +1478,20 @@ template {
   font-size: 12px;
   line-height: 15px;
   margin-right: 13px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-bottom__link:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer-bottom__info {
@@ -1350,6 +1500,19 @@ template {
           order: 1;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.footer__location {
+  text-decoration: none;
+  color: #BDBDBD;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__location:hover {
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media (max-width: 1200px) {
@@ -1391,6 +1554,19 @@ template {
   .search__input {
     max-width: 340px;
   }
+  .search__button {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .search__button:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #ffffff;
+    background-color: #EC1F46;
+  }
+  .user__name::after {
+    content: none;
+  }
   .navigation {
     padding-top: 22px;
     padding-bottom: 22px;
@@ -1398,6 +1574,11 @@ template {
   .navigation__link {
     font-size: 12px;
     line-height: 15px;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .navigation__link::after {
+    content: none;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1417,6 +1598,34 @@ template {
   }
   .booking {
     width: 340px;
+  }
+  .booking__button {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .booking__button:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #ffffff;
+    background-color: #EC1F46;
+  }
+  .booking__number {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .booking__number:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .subscribe__button {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .subscribe__button:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #ffffff;
+    background-color: #EC1F46;
   }
   .map {
     width: 340px;
@@ -1438,18 +1647,33 @@ template {
     width: 340px;
     height: 255px;
   }
+  .card__button {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .card__button:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #ffffff;
+    background-color: #EC1F46;
+  }
   .footer-container {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__logo {
-    width: 104px;
-    height: 120px;
+  .footer__btp {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: span 2;
+  }
+  .footer__logo {
+    width: 104px;
+    height: 120px;
+  }
+  .footer__link::after {
+    content: none;
   }
   .footer__social-network {
     -ms-grid-row: 1;
@@ -1459,6 +1683,14 @@ template {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .footer__social-icon {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .footer__social-icon:hover {
+    -webkit-filter: none;
+            filter: none;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -1488,9 +1720,38 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer-bottom__link {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .footer-bottom__link:hover {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transition: none;
+    transition: none;
+  }
   .footer__input {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
+  }
+  .footer__phone, .footer__email, .footer__location, .footer__link {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .footer__phone:hover, .footer__email:hover, .footer__location:hover, .footer__link:hover {
+    color: inherit;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .footer__button {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .footer__button:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #ffffff;
+    background-color: #EC1F46;
   }
 }
 
@@ -1674,13 +1935,14 @@ template {
     -ms-grid-columns: minmax(250px, 459px);
         grid-template-columns: minmax(250px, 459px);
   }
-  .footer__logo {
+  .footer__btp {
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
   }
   .footer__social-network {
+    width: 180px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-grid-row: 2;

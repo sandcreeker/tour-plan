@@ -29,12 +29,25 @@
   .search
     &__input
       max-width: 340px
+    &__button
+      transition: none
+      &:hover
+        transition: none
+        color: $light
+        background-color: $primary
+  .user
+    &__name
+      &::after
+        content: none
   .navigation
     padding-top: 22px
     padding-bottom: 22px
     &__link
       font-size: 12px
       line-height: 15px
+      transition: none
+      &::after
+        content: none
   .hotel
     &-grid
       flex-direction: column
@@ -46,6 +59,23 @@
       margin-bottom: 30px
   .booking
     width: 340px
+    &__button
+      transition: none
+      &:hover
+        transition: none
+        color: $light
+        background-color: $primary
+    &__number
+      transition: none
+      &:hover
+        filter: none
+  .subscribe
+    &__button
+      transition: none
+      &:hover
+        transition: none
+        color: $light
+        background-color: $primary
   .map
     width: 340px
   .reviews
@@ -62,20 +92,34 @@
   .card
     width: 340px
     height: 255px
+    &__button
+      transition: none
+      &:hover
+        transition: none
+        color: $light
+        background-color: $primary
   .footer
     &-container
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
+    &__btp
+      grid-row: 1 / 2
+      grid-column: span 2
     &__logo
       width: 104px
       height: 120px
-      grid-row: 1 / 2
-      grid-column: span 2
+    &__link
+      &::after
+        content: none
     &__social
       &-network
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+      &-icon
+        transition: none
+        &:hover
+          filter: none
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
@@ -93,8 +137,24 @@
       padding-top: 56px
       &__info
         flex-basis: 100%
+      &__link
+        transition: none
+        &:hover
+          filter: none
+          transition: none
     &__input
       flex-basis: 48%
+    &__phone, &__email, &__location, &__link,
+      transition: none
+      &:hover
+        color: inherit
+        transition: none
+    &__button
+      transition: none
+      &:hover
+        transition: none
+        color: $light
+        background-color: $primary
 @media ( max-width:768px)
   .container
     max-width: 576px
@@ -212,11 +272,12 @@
     padding-right: 17px
     &-container
       grid-template-columns: minmax(250px, 459px)
-    &__logo
+    &__btp
       grid-row: 1
       grid-column: 1
     &__social
       &-network
+        width: 180px
         flex-wrap: wrap
         grid-row: 2
         grid-column: 1
