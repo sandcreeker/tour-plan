@@ -1855,6 +1855,36 @@ template {
     color: #ffffff;
     background-color: #EC1F46;
   }
+  .modal__close:hover {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .modal__button:hover {
+    color: #ffffff;
+    background-color: #EC1F46;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .modal__dispatch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modal__button {
+    width: 100%;
+  }
+  .modal__info {
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2066,6 +2096,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    width: 600px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 630px) {
@@ -2199,6 +2232,11 @@ template {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .modal__dialog {
+    width: 85%;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }
 
