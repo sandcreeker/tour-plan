@@ -1,22 +1,18 @@
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function() {
-  console.log("Клик");
   document.querySelector(".navbar-buttom").classList.toggle("navbar-buttom--active");
   document.querySelector(".navigation__item--mobile").classList.toggle("navigation__item--mobile--on");
   document.querySelector(".navigation__item--mob").classList.toggle("navigation__item--mob--on");
 });
 
 var hotelSlider = new Swiper('.hotel-slider', {
-  // Optional parameters
   loop: true,
 
-
-  // Navigation arrows
   navigation: {
     nextEl: '.hotel-slider__button--next',
     prevEl: '.hotel-slider__button--prev',
   },
-})
+});
 
 $(document).keydown(function(e){
   if (e.which == 37) {
@@ -25,7 +21,8 @@ $(document).keydown(function(e){
   if (e.which == 39) {
     $('.slider-button--next')[0].click();
   };
-});
+})
+
 var myMap;
 
 ymaps.ready(init);
@@ -50,14 +47,11 @@ function init () {
         myMap.destroy();
     };
 
-}
+};
 
 var reviewsSlider = new Swiper('.reviews-slider', {
-  // Optional parameters
   loop: true,
 
-
-  // Navigation arrows
   navigation: {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',

@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -202,8 +202,8 @@
       <h2 class="newsletter-title">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
-          <input type="text" class="subscribe__input" placeholder="Your email address">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+          <input type="text" class="subscribe__input" placeholder="Your email address" name="subscribe">
           <button class="subscribe__button">
             Send
           </button>
@@ -425,10 +425,10 @@
         <!-- /.footer__contanct-detail -->
         <div class="footer__feedback">
           <h3 class="footer__title footer__title--message">Send us a message</h3>
-          <form action="#" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*">
-            <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea cols="30" class="footer__area" placeholder="Message">
+          <form action="send.php" method="POST" class="footer__form">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <textarea class="footer__area" placeholder="Message" name="message">
             </textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -454,6 +454,6 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/parallax.js"></script>
+<script src="js/parallax.min.js"></script>
 </body>
 </html>
