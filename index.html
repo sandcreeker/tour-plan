@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="navbar navbar__mobile--fixed">
@@ -183,7 +182,7 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button class="booking__button">
+            <button data-toggle="modal" class="booking__button">
               View Other Options
             </button>
           </div>
@@ -428,7 +427,7 @@
           <form action="send.php" method="POST" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
             <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__area" placeholder="Message" name="message">
+            <textarea class="area footer__area" placeholder="Message" name="message">
             </textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -450,6 +449,28 @@
     </div>
     <!-- /.container -->
   </section>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close">
+        </a>
+          <h3 class="modal__title modal__title--message">Booking</h3>
+          <form action="send.php" method="POST" class="modal__form">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+            <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+            <input type="text" class="input modal__input" placeholder="Email*" name="email">
+            <textarea class="area modal__area" placeholder="Message" name="message">
+            </textarea>
+            <div class="modal__dispatch">
+              <button class="button modal__button" type="submit">Send</button>
+              <span class="modal__info">* Required Fields</spa>
+            </div>
+          </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
