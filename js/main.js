@@ -83,3 +83,9 @@ $(document).ready(function () {
       modalDialog.removeClass('modal__dialog--visible');
     }
 });
+
+  $(document).keydown(function(even){
+      if(event.which == 27) {
+        $('.modal__close')[0].click();
+      }
+    });
