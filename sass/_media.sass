@@ -14,7 +14,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &--group
+        flex-basis: 100%
 @media ( max-width:992px)
   .container, .newsletter-container
     max-width: 700px
@@ -143,7 +144,8 @@
           filter: none
           transition: none
     &__input
-      flex-basis: 48%
+      &--group
+        flex-basis: 48%
     &__phone, &__email, &__location, &__link,
       transition: none
       &:hover
@@ -314,7 +316,8 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &--group
+        flex-basis: 100%
   .modal
     &__dialog
       width: 600px
@@ -401,3 +404,5 @@
 @media ( max-width: 390px)
   .subscribe
     width: 280px
+@media ( max-height: 540px )
+  .modal
