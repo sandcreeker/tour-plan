@@ -103,7 +103,6 @@ $(document).ready(function () {
         },
       phone: {
         required: "Please specify your phone",
-        phone: "Your phone must be in the format of +7 (999) 999-99-99",
         minlength: "Enter the correct number",
         },
       subscribe: {
@@ -114,4 +113,4 @@ $(document).ready(function () {
     });
   });
 
-  $('.modal__phone').mask('+0 (000) 000 00 00');
+  $('.phone').mask('+7 (000) 000 00 00');
