@@ -64,16 +64,16 @@ $(document).ready(function () {
     function openModal() {
       var modalOverlay = $(".modal__overlay");
       var modalDialog= $(".modal__dialog");
-      modalOverlay.addClass('modal__overlay--visible');
-      modalDialog.addClass('modal__dialog--visible');
+      modalOverlay.addClass('modal__overlay--visible animate__animated  animate__fadeIn');
+      modalDialog.addClass('modal__dialog--visible animate__animated animate__fadeIn');
     }
 
     function closeModal(event) {
       event.preventDefault();
       var modalOverlay = $(".modal__overlay");
       var modalDialog= $(".modal__dialog");
-      modalOverlay.removeClass('modal__overlay--visible');
-      modalDialog.removeClass('modal__dialog--visible');
+      modalOverlay.removeClass('modal__overlay--visible animate__animated animate__fadeIn');
+      modalDialog.removeClass('modal__dialog--visible animate__animated animate__fadeIn');
     }
 
     function closeModalOverlay() {
@@ -111,6 +111,13 @@ $(document).ready(function () {
         },
       },
     });
+    AOS.init();
   });
 
   $('.phone').mask('+7 (000) 000 00 00');
+
+  var errorAnimate = document.querySelector(".modal__button");
+    errorAnimate.addEventListener("click", function(){
+      document.querySelector(".invalid").classList.toggle("animate__animated animate__shakeX");
+    });
+
