@@ -10,9 +10,7 @@ $(document).ready(function () {
     menuAnimate.on("click", onAnimate);
 
   function onAnimate(){
-    var animateDownOff = $(".navbar-buttom");
     var animateOn = $(".navbar-buttom");
-    animateDownOff.removeClass('animate__animated animate__fadeOutDown');
     animateOn.toggleClass('animate__animated animate__fadeInUp');
   }
 
