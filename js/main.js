@@ -4,7 +4,21 @@ $(document).ready(function () {
   document.querySelector(".navbar-buttom").classList.toggle("navbar-buttom--active");
   document.querySelector(".navigation__item--mobile").classList.toggle("navigation__item--mobile--on");
   document.querySelector(".navigation__item--mob").classList.toggle("navigation__item--mob--on");
+  
   });
+  var menuAnimate = $(".menu-button");
+    menuAnimate.on("click", onAnimate);
+
+  function onAnimate(){
+    var animateDownOff = $(".navbar-buttom");
+    var animateOn = $(".navbar-buttom");
+    animateDownOff.removeClass('animate__animated animate__fadeOutDown');
+    animateOn.toggleClass('animate__animated animate__fadeInUp');
+  }
+
+  
+
+
 
   var hotelSlider = new Swiper('.hotel-slider', {
     loop: true,
