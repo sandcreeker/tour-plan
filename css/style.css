@@ -65,10 +65,12 @@ img {
 }
 
 .invalid {
+  position: relative;
   color: #dd0101;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 23px;
+  padding-left: 5px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1562,7 +1564,7 @@ template {
   position: fixed;
   z-index: 101;
   min-height: 478px;
-  max-width: 478px;
+  width: 478px;
   padding: 33px 88px;
   border-radius: 8px;
   background-color: #0A223D;
@@ -1606,7 +1608,8 @@ template {
 .modal__input {
   width: 100%;
   margin-bottom: 0;
-  margin-top: 15px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .modal__area {
@@ -1634,6 +1637,10 @@ template {
 
 .modal__info {
   color: #E0E0E0;
+}
+
+.modal__flex {
+  margin-top: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1879,6 +1886,9 @@ template {
             filter: none;
     -webkit-transition: none;
     transition: none;
+  }
+  .modal__area {
+    height: 80px;
   }
   .modal__button:hover {
     color: #ffffff;
@@ -2262,6 +2272,41 @@ template {
 @media (max-width: 390px) {
   .subscribe {
     width: 280px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .modal__dialog {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 700px;
+    min-height: 300px;
+  }
+  .modal__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 640px;
+  }
+  .modal__flex {
+    height: 74px;
+  }
+  .modal__input {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    width: 200px;
+    margin-right: 20px;
+  }
+  .modal__title {
+    margin-bottom: 0;
+  }
+  .modal__area {
+    height: 70px;
+  }
+  .modal__info {
+    font-size: 11px;
+    margin-bottom: 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -463,9 +463,17 @@
         </a>
           <h3 class="modal__title modal__title--message">Booking</h3>
           <form action="send.php" method="POST" class="form modal__form">
-            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required autocomplete="off">
-            <input type="tel" class="phone input modal__input" placeholder="Phone Number*" name="phone" required autocomplete="off" data-mask="+7 (999) 999 99 99" minlength="18">
-            <input type="email" class="input modal__input" placeholder="Email*" name="email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
+            <div class="modal__group">
+              <div class="modal__flex">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required autocomplete="off">
+              </div>
+              <div class="modal__flex">
+                <input type="tel" class="phone input modal__input" placeholder="Phone Number*" name="phone" required autocomplete="off" data-mask="+7 (999) 999 99 99" minlength="18">
+              </div>
+              <div class="modal__flex">
+                <input type="email" class="input modal__input" placeholder="Email*" name="email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
+              </div>
+            </div>
             <textarea class="area modal__area" placeholder="Message" name="message">
             </textarea>
             <div class="modal__dispatch">

@@ -162,6 +162,8 @@
       &:hover
         filter: none
         transition: none
+    &__area
+      height: 80px
     &__button
       &:hover
         color: $light
@@ -404,5 +406,27 @@
 @media ( max-width: 390px)
   .subscribe
     width: 280px
-@media ( max-height: 540px )
+@media screen and ( max-height: 500px )
   .modal
+    &__dialog
+      padding-top: 15px
+      padding-left: 30px
+      padding-right: 30px
+      width: 700px
+      min-height: 300px
+    &__group
+      display: flex
+      width: 640px
+    &__flex
+      height: 74px
+    &__input
+      flex-basis: 0
+      width: 200px
+      margin-right: 20px
+    &__title
+      margin-bottom: 0
+    &__area
+      height: 70px
+    &__info
+      font-size: 11px
+      margin-bottom: 7px
