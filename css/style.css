@@ -924,6 +924,14 @@ template {
   overflow: hidden;
 }
 
+.button__back {
+  text-decoration: none;
+}
+
+.button__back--page {
+  margin-top: 20px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1913,6 +1921,16 @@ template {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+  }
+  .button__back--page {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .button__back--page:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: #ffffff;
+    background-color: #EC1F46;
   }
 }
 
