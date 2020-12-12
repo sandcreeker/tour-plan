@@ -69,6 +69,7 @@
   .swiper
     &-container
       margin-left: 0
+      border-radius: 8px
   .offer
     padding: 4px 9px
     background-color: $primary
@@ -188,9 +189,11 @@
   position: relative
   overflow: hidden
   cursor: pointer
+  object-fit: cover
   background: url('../img/ya-map.png') #ffffff no-repeat
   background-position: center center
   background-size: cover
+  border-radius: 10px
 #map-yandex
   position: relative
   z-index: 7
@@ -198,8 +201,7 @@
   background-color: transparent
   width: 347px
   height: 213px
-  border-radius: 10px
-  // overflow: hidden
+  overflow: hidden
 .loader
   position: absolute
   z-index: 15

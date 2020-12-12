@@ -2,17 +2,9 @@ $(document).ready(function () {
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function() {
   document.querySelector(".navbar-buttom").classList.toggle("navbar-buttom--active");
-  document.querySelector(".navigation__item--mobile").classList.toggle("navigation__item--mobile--on");
-  document.querySelector(".navigation__item--mob").classList.toggle("navigation__item--mob--on");
-  
+  document.querySelector(".navigation__mobile").classList.toggle("navigation__mobile__on");
+  document.querySelector(".navigation__mob").classList.toggle("navigation__mob__on");
   });
-  var menuAnimate = $(".menu-button");
-    menuAnimate.on("click", onAnimate);
-
-  function onAnimate(){
-    var animateOn = $(".navbar-buttom");
-    animateOn.toggleClass('animate__animated animate__fadeInUp');
-  }
 
   
 
@@ -169,7 +161,7 @@ var ymap = function() {
       }
     }
   );  
-}
+};
  
 $(function() {
  
@@ -197,16 +189,16 @@ $(function() {
     function openModal() {
       var modalOverlay = $(".modal__overlay");
       var modalDialog= $(".modal__dialog");
-      modalOverlay.addClass('modal__overlay--visible animate__animated  animate__fadeIn');
-      modalDialog.addClass('modal__dialog--visible animate__animated animate__fadeIn');
+      modalOverlay.addClass('modal__overlay--visible');
+      modalDialog.addClass('modal__dialog--visible');
     }
 
     function closeModal(event) {
       event.preventDefault();
       var modalOverlay = $(".modal__overlay");
       var modalDialog= $(".modal__dialog");
-      modalOverlay.removeClass('modal__overlay--visible animate__animated animate__fadeIn');
-      modalDialog.removeClass('modal__dialog--visible animate__animated animate__fadeIn');
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
     }
 
     function closeModalOverlay() {
@@ -244,7 +236,6 @@ $(function() {
         },
       },
     });
-    AOS.init();
   });
 
   $('.phone').mask('+7 (000) 000 00 00');

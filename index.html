@@ -4,18 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=e5ab86c2-5feb-4bc3-bfe8-ddd63356d216&lang=ru_RU">
-    </script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/swiper-bundle.min.css">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar__mobile__fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
@@ -24,7 +21,7 @@
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
-            <img src="img/search.svg" alt="icon: search">
+            <img class="search__icon" src="img/search.svg" alt="icon: search">
           </button>
         </form>
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
@@ -44,17 +41,17 @@
     <nav class="navbar-buttom">
       <div class="container">
         <ul class="navigation">
-          <li class="navigation__item--mobile">
-            <a href="#" class="user navbar__user navigation__item--mobile--on">
+          <li class="navigation__mobile">
+            <a href="#" class="user navbar__user navigation__mobile__on">
               <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar user__avatar--mobile">
               <span class="user__name user__name--mobile">Nathan</span>
             </a>
           </li>
-          <li class="navigation__item--mob">
-            <form action="#" class="search navbar__search navigation__item--mob--on">
+          <li class="navigation__mob">
+            <form action="#" class="search navbar__search navigation__mob__on">
               <input type="text" class="search__input" placeholder="Search Location">
               <button class="search__button">
-                <img src="img/search.svg" alt="icon: search">
+                <img class="search__icon" src="img/search.svg" alt="icon: search">
               </button>
             </form>
           </li>
@@ -207,11 +204,13 @@
       <h2 class="newsletter-title">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="form subscribe newsletter__subscribe" data-aos="fade-left">
+      <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
+        <div class="subscribe__group">
           <input type="email" class="subscribe__input" placeholder="Your email address" name="subscribe" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
           <button class="subscribe__button">
             Send
           </button>
+        </div>
         </form>
     </div>
     <!-- /.newsletter-container -->
@@ -277,22 +276,22 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-container">
-        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card activities__card">
           <img src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
-          <h3 class="card__title">The curious corner of chamarel</h3>
+          <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card activities__card" data-aos="fade-up" data-aos-delay="250">
+        <div class="card activities__card">
           <img src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
-          <img src="img/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
-          <h3 class="card__title">Tamarind falls hikingtrip - full day</h3>
+        <div class="card activities__card">
+          <img src="img/activities-3.jpg" alt="Tamarind falls hiking trip- full day" class="card__image">
+          <h3 class="card__title">Tamarind falls hiking trip&nbsp;- full day</h3>
           <button class="card__button">Book Now</button>
         </div>
-        <div class="card activities__card" data-aos="fade-up" data-aos-delay="550">
+        <div class="card activities__card">
           <img src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
@@ -307,98 +306,107 @@
   <section class="footer">
     <div class="container">
       <div class="footer-container">
-        <a href="https://kroken.ru/homeworks/tour-plan.1/" class="footer__btp">
-          <img src="img/vertical-besttourplan.svg" alt="image: logo best tour plan" class="footer__logo">
-        </a>
-        <div class="footer__list footer__categories">
-          <h3 class="footer__title">ALL CATEGORIES</h3>
-          <ul class="footer__ul">
-            <li class="footer__item">
-              <a href="#" class="footer__link">All Deals</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Hotels</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Activities</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Spa Packages</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Hotel Day Packages</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Restaurants</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Fitness</a
-                ></li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Rodrigues</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.footer__list -->
-        <div class="footer__list footer__additional">
-          <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
-          <ul class="footer__ul">
-            <li class="footer__item">
-              <a href="#" class="footer__link">About Us</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Contact Us</a>  
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">How does it work?</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Frequently Asked Questions</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Deals.mu loyalty program</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Promote your Business on BTP</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.footer__list -->
-        <div class="footer__social-network">
-          <h3 class="footer__title">Social Network</h3>
-          <div class="footer__social-links">
-            <a href="#" class="footer__social-link">
-              <img src="img/fb.svg" alt="icon: facebook" class="footer__social-icon">
-            </a>
-            <a href="#" class="footer__social-link">
-              <img src="img/yt.svg" alt="icon: youtube" class="footer__social-icon">
-            </a>
-            <a href="#" class="footer__social-link">
-              <img src="img/inst.svg" alt="icon: instagram" class="footer__social-icon">
+        <div class="footer__section">
+          <div class="footer__image">
+            <a href="https://kroken.ru/homeworks/hotel-booking/" class="footer__btp">
+            <img src="img/vertical-besttourplan.svg" alt="image: logo best tour plan" class="footer__logo">
             </a>
           </div>
-          <!-- /.footer__social-links -->
-        </div>
-        <!-- /.footer__social-network -->
-        <div class="footer__list footer__legal">
-          <h3 class="footer__title">LEGAL INFORMATION</h3>
-          <ul class="footer__ul">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Terms & Conditions</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Disclaimer</a>  
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Cancellation policy</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Privacy</a>
-            </li>
-          </ul>
+          <!-- /.footer__image -->
+          <div class="footer__list footer__categories">
+            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">All Deals</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Hotels</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Activities</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Spa Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Hotel Day Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Restaurants</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Fitness</a
+                  ></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Rodrigues</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__list -->
+          <div class="footer__column">
+            <div class="footer__list footer__additional">
+              <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Contact Us</a>  
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">How does it work?</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Frequently Asked Questions</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Promote your Business on BTP</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
+            <div class="footer__social-network">
+              <h3 class="footer__social__title">Social Network</h3>
+              <div class="footer__social-links">
+                <a href="#" class="footer__social-link">
+                  <img src="img/fb.svg" alt="icon: facebook" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link">
+                  <img src="img/yt.svg" alt="icon: youtube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link">
+                  <img src="img/inst.svg" alt="icon: instagram" class="footer__social-icon">
+                </a>
+              </div>
+              <!-- /.footer__social-links -->
+            </div>
+          </div>
+          
+          <!-- /.footer__social-network -->
+          <div class="footer__list footer__legal">
+            <h3 class="footer__title">LEGAL INFORMATION</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Disclaimer</a>  
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cancellation policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- /.footer__list -->
-        <div class="footer__contact-detail">
+        <div class="footer__communication">
+          <div class="footer__contact-detail">
           <h3 class="footer__title">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
             <ul class="footer__ul">
@@ -426,24 +434,28 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <!-- /.footer__contanct-detail -->
+          <div class="footer__feedback">
+            <h3 class="footer__title footer__title--message">Send us a message</h3>
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input__group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required autocomplete="off">
+              </div>
+              <div class="footer__input__group">
+                <input type="tel" class="phone input footer__input" placeholder="Phone Number*" name="phone" required autocomplete="off" minlength="18" data-mask="+7 (999) 999 99 99">
+              </div>
+              <textarea class="area footer__area" placeholder="Message" name="message"></textarea>
+              <div class="footer__submit">
+                <button class="button footer__button" type="submit">Send</button>
+              <span class="footer__info">* Required Fields</span>
+              </div>
+            </form>
+          </div>
+          <!-- /.footer__feedback -->
         </div>
-        <!-- /.footer__contanct-detail -->
-        <div class="footer__feedback">
-          <h3 class="footer__title footer__title--message">Send us a message</h3>
-          <form action="send.php" method="POST" class="form footer__form">
-            <div class="footer__input--group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required autocomplete="off">
-            </div>
-            <div class="footer__input--group">
-              <input type="tel" class="phone input footer__input" placeholder="Phone Number*" name="phone" required autocomplete="off" minlength="18" data-mask="+7 (999) 999 99 99">
-            </div>
-            <textarea class="area footer__area" placeholder="Message" name="message">
-            </textarea>
-            <button class="button footer__button" type="submit">Send</button>
-            <span class="footer__info">* Required Fields</span>
-          </form>
-        </div>
-        <!-- /.footer__feedback -->
+        <!-- /.footer__communication -->
+        
       </div>
       <!-- /.footer-container -->
       <div class="footer-bottom">
@@ -474,15 +486,14 @@
               <div class="modal__flex">
                 <input type="tel" class="phone input modal__input" placeholder="Phone Number*" name="phone" required autocomplete="off" data-mask="+7 (999) 999 99 99" minlength="18">
               </div>
-              <div class="modal__flex">
-                <input type="email" class="input modal__input" placeholder="Email*" name="email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
+              <div class="modal__flex modal__flex__email">
+                <input type="email" class="input modal__input modal__input__email" placeholder="Email*" name="email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
               </div>
             </div>
-            <textarea class="area modal__area" placeholder="Message" name="message">
-            </textarea>
+            <textarea class="area modal__area" placeholder="Message" name="message"></textarea>
             <div class="modal__dispatch">
               <button class="button modal__button" type="submit">Send</button>
-              <span class="modal__info">* Required Fields</spa>
+              <span class="modal__info">* Required Fields</span>
             </div>
           </form>
     </div>
@@ -492,10 +503,8 @@
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
 </body>
 </html>
