@@ -1,7 +1,7 @@
 .footer
   background-color: $dark
   color: $light
-  padding: 108px 25px
+  padding: 108px 25px 46px
   &-container
     // display: grid
     // grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -9,8 +9,8 @@
     // grid-auto-rows: minmax(40px, min-content)
   &__section
     display: flex
-    justify-content: space-between
-    margin-bottom: 89px
+    // justify-content: space-between
+    margin-bottom: 94px
   &__column
     display: flex
     flex-direction: column
@@ -18,15 +18,18 @@
     max-height: 218px
   &__communication
     display: flex
-    justify-content: space-between
   &__image
     padding-top: 31px
+    margin-right: 119px
   &__logo
-    width: 166px
-    height: 192px
+    width: 160px
+    height: 169px
     align-self: stretch
+  &__additional
+    margin-right: 109px
+    margin-bottom: 31px
   &__categories
-    grid-row: 1 / 4
+    margin-right: 129px
   &__social
     &-network
       flex-wrap: wrap
@@ -35,6 +38,7 @@
   &__contact
     &-detail
       max-width: 493px
+      margin-right: 84px
   &__feedback
     max-width: 539px
   &__form
@@ -68,7 +72,7 @@
     line-height: 23px
     text-transform: uppercase
     margin-top: 0
-    margin-bottom: 16px
+    margin-bottom: 31px
     &--message
       margin-bottom: 30px
   &__ul
@@ -87,7 +91,7 @@
     line-height: 100%
     color: $footer-text-color
     &--li
-      margin-bottom: 20px
+      margin-bottom: 30px
   &__icon
     &-wrapper
       min-width: 40px
@@ -113,6 +117,8 @@
     color: $footer-text-color
   &__area
     flex-basis: 100%
+    font-size: 12px
+    line-height: 15px
   &__social
     &__title
       font-weight: bold
@@ -138,6 +144,8 @@
       min-width: 40px
   &__input
     width: 100%
+    font-size: 12px
+    line-height: 15px
     &__group
       margin-bottom: 15px
       flex-basis: 48%
