@@ -478,19 +478,19 @@
           <img src="img/close.svg" alt="icon: close">
         </a>
           <h3 class="modal__title modal__title--message">Booking</h3>
-          <form action="send.php" method="POST" class="form modal__form">
+          <form action="send.php" method="POST" class="form modal__form booking-hotel">
             <div class="modal__group">
               <div class="modal__flex">
-                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required autocomplete="off">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="booking-name" required autocomplete="off">
               </div>
               <div class="modal__flex">
-                <input type="tel" class="phone input modal__input" placeholder="Phone Number*" name="phone" required autocomplete="off" data-mask="+7 (999) 999 99 99" minlength="18">
+                <input type="tel" class="phone input modal__input" placeholder="Phone Number*" name="booking-phone" required autocomplete="off" data-mask="+7 (999) 999 99 99" minlength="18">
               </div>
               <div class="modal__flex modal__flex__email">
-                <input type="email" class="input modal__input modal__input__email" placeholder="Email*" name="email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
+                <input type="email" class="input modal__input modal__input__email" placeholder="Email*" name="booking-email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
               </div>
             </div>
-            <textarea class="area modal__area" placeholder="Message" name="message"></textarea>
+            <textarea class="area modal__area" placeholder="Message" name="booking-message"></textarea>
             <div class="modal__dispatch">
               <button class="button modal__button" type="submit">Send</button>
               <span class="modal__info">* Required Fields</span>
