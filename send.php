@@ -11,6 +11,7 @@ $subscribe = $_POST ['subscribe'];
 $bookingName = $_POST ['booking-name'];
 $bookingPhone = $_POST ['booking-phone'];
 $bookingEmail = $_POST ['booking-email'];
+$bookingMessage = $__POST ['booking-message'];
 
 
 $title = "Отзыв Best Tour Plan";
@@ -26,14 +27,14 @@ $body = "
         <h2>Спасибо, что подписались</h2>";
     }
 
-    if ($bookingName & $bookingPhone & $bookingEmail) {
+    if ($bookingName & $bookingPhone & $bookingEmail & $bookingMessage) {
         $title = "Пользователь забронировал отель";
         $body = "
         <h2>Параметры обращения</h2>
         <b>Имя:</b> $bookingName<br>
         <b>Телефон:</b> $bookingPhone<br><br>
         <b>Email:</b> $bookingEmail<br><br>
-        <b>Сообщение:</b><br>$message";
+        <b>Сообщение:</b><br>$BookingMessage";
         
     }
 
